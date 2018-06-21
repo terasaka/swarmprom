@@ -18,7 +18,7 @@ script:
 
 after_success:
   - if [ -z "$DOCKER_USER" ]; then
-      echo "PR build, skipping Docker Hub push";
+      echo " -- PR build, skipping Docker Hub push -- ";
     else
     docker login -u "$DOCKER_USER" -p "$DOCKER_PASS";
     docker tag terasaka/swarmprom-prometheus:$TRAVIS_BUILD_NUMBER terasaka/swarmprom-prometheus:v2.2.0-rc.0;
