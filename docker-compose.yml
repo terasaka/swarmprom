@@ -22,7 +22,7 @@ configs:
 
 services:
   dockerd-exporter:
-    image: terasaka/caddy
+    image: terasaka/swarmprom-caddy
     networks:
       - net
     environment:
@@ -179,7 +179,7 @@ services:
           memory: 128M
 
   caddy:
-    image: terasaka/caddy
+    image: terasaka/swarmprom-caddy
     ports:
       - "3000:3000"
       - "9090:9090"
