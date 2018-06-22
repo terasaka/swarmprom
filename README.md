@@ -7,6 +7,7 @@ Swarmprom is a starter kit for Docker Swarm monitoring with [Prometheus](https:/
 [Alert Manager](https://github.com/prometheus/alertmanager)
 and [Unsee](https://github.com/cloudflare/unsee).
 
+Forked from https://github.com/stefanprodan/swarmprom
 ## Install
 
 Clone this repository and run the monitoring stack:
