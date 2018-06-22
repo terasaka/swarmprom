@@ -30,6 +30,6 @@ after_success:
     docker push terasaka/swarmprom-alertmanager:v0.14.0;
     docker tag terasaka/swarmprom-grafana:$TRAVIS_BUILD_NUMBER terasaka/swarmprom-grafana:5.0.1;
     docker push terasaka/swarmprom-grafana:5.0.1;
-    docker tag terasaka/swarmprom-caddy:$TRAVIS_BUILD_NUMBER terasaka/swarmprom-caddy:5.0.1;
+    docker tag terasaka/swarmprom-caddy:$TRAVIS_BUILD_NUMBER terasaka/swarmprom-caddy:0.0.1;
     docker push terasaka/swarmprom-caddy:0.0.1;
     fi
